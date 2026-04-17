@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="th"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;ช่างกุ้ง ซ่อมเครื่องใช้ไฟฟ้า | เสลภูมิ ร้อยเอ็ด&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta</p>
+<p class="p1"><span class="Apple-converted-space">    </span>name="description"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content="ช่างกุ้ง รับซ่อมเครื่องใช้ไฟฟ้าถึงบ้านในพื้นที่เสลภูมิ ร้อยเอ็ด และใกล้เคียง ตรวจเช็กก่อนซ่อม แจ้งราคาก่อนทำงาน"</p>
+<p class="p1"><span class="Apple-converted-space">  </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #fff8f2;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--soft: #fff0e4;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text: #2e241d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--muted: #6d6257;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #ef6c17;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent-dark: #c84d00;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: #efd8c5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--shadow: 0 14px 36px rgba(120, 72, 28, 0.12);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--radius-sm: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--max: 1100px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>* { box-sizing: border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html { scroll-behavior: smooth; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--text);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(circle at top left, rgba(255, 194, 145, 0.28), transparent 25%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>linear-gradient(180deg, #fff8f2 0%, #fff3e8 35%, #fffdfb 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>a { color: inherit; text-decoration: none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: min(calc(100% - 32px), var(--max));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section { padding: 72px 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(1.8rem, 4vw, 2.5rem);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.15;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-desc {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 720px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--card);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: var(--shadow);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.topbar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 20;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(12px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255, 248, 242, 0.9);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid rgba(239, 108, 23, 0.14);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.topbar-inner {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand small {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.86rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.actions,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-actions,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-actions {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 52px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-primary {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #ff9347, var(--accent));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 14px 28px rgba(239, 108, 23, 0.25);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-secondary {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-dark);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(239, 108, 23, 0.2);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover { transform: translateY(-1px); }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 44px 0 56px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-main,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-side {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-main {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(circle at top right, rgba(255, 210, 176, 0.8), transparent 28%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>linear-gradient(135deg, #fff6ef 0%, #ffffff 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.eyebrow {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--soft);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-dark);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.92rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(2.2rem, 7vw, 4.2rem);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 0.98;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: -0.03em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 18px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.05rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 680px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pill-list,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.list-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 24px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pill-list {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pill-list li {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-note {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-dark);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-side {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, #fff2e6 0%, #ffffff 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mini-proof {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-sm);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.94);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mini-proof strong {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.02rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.icon {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 46px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 46px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>place-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #ffe0c8, #fff5ec);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-dark);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item h3 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.08rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.item p,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.review p,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-box p,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.area-box p,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.area-box {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>linear-gradient(135deg, rgba(239,108,23,0.08), rgba(255,255,255,1)),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.area-note {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-sm);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--soft);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(239,108,23,0.14);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-dark);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.review {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 52px 22px 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.review::before {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content: "“";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 4rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: rgba(239,108,23,0.18);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tag {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 999px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--soft);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--accent-dark);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.92rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-box {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-box strong {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hours {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 18px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 0 110px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(circle at top left, rgba(255, 210, 176, 0.4), transparent 28%),</p>
+<p class="p1"><span class="Apple-converted-space">        </span>linear-gradient(140deg, #fff3e5 0%, #fffaf7 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-card h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 0 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: clamp(1.8rem, 4vw, 2.3rem);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.15;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-meta {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.94rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--muted);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sticky-cta {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 30;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255,255,255,0.94);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(16px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(239,108,23,0.14);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 18px 38px rgba(133, 76, 28, 0.16);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sticky-cta .btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 0.96rem;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (min-width: 760px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero-grid { grid-template-columns: 1.6fr 0.9fr; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (min-width: 980px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.section { padding: 92px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.sticky-cta { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 759px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.topbar-inner {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="topbar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container topbar-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="brand"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ช่างกุ้ง ซ่อมเครื่องใช้ไฟฟ้า</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;small&gt;บ้านหัน ต.ขวาว อ.เสลภูมิ จ.ร้อยเอ็ด&lt;/small&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="btn btn-secondary" href="https://line.me/R/ti/p/@yourline"&gt;ทัก LINE&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="btn btn-primary" href="tel:08XXXXXXXX"&gt;โทรทันที&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container hero-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card hero-main"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="eyebrow"&gt;บริการซ่อมถึงบ้านในพื้นที่เสลภูมิ ร้อยเอ็ด&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;ช่างกุ้ง ซ่อมเครื่องใช้ไฟฟ้า&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;รับซ่อมเครื่องใช้ไฟฟ้าถึงบ้านในพื้นที่ เสลภูมิ ร้อยเอ็ด และใกล้เคียง ตรวจเช็กก่อนซ่อม แจ้งราคาก่อนทำงาน&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul class="pill-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;ซ่อมทีวี&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;ซ่อมเครื่องซักผ้า&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;ซ่อมพัดลม&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;ซ่อมวิทยุ&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;ซ่อมเครื่องเสียง&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;ไม่รับงานแอร์&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="hero-actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn btn-primary" href="tel:08XXXXXXXX"&gt;โทรทันที&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="btn btn-secondary" href="https://line.me/R/ti/p/@yourline"&gt;ทัก LINE&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="hero-note"&gt;ตรวจเช็กอาการก่อนซ่อม และแจ้งราคาก่อนเริ่มงานทุกครั้ง&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;aside class="card hero-side"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mini-proof"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;บริการถึงบ้าน&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;สะดวกสำหรับลูกค้าในพื้นที่และพื้นที่ใกล้เคียง&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mini-proof"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;แจ้งราคาก่อนทำงาน&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;รู้ค่าใช้จ่ายเบื้องต้นก่อนตัดสินใจซ่อม&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="mini-proof"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;ติดต่อสะดวก&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;ช่างในพื้นที่ พูดคุยง่าย และติดตามงานต่อได้&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/aside&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;บริการของเรา&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="section-desc"&gt;รับซ่อมเครื่องใช้ไฟฟ้าภายในบ้านหลายประเภท โดยเน้นการตรวจเช็กอาการจริงก่อนเริ่มงานทุกครั้ง&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;TV&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ซ่อมโทรทัศน์&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;เช็กอาการเปิดไม่ติด ภาพไม่ขึ้น เสียงไม่ออก หรืออาการใช้งานผิดปกติทั่วไป&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;WM&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ซ่อมเครื่องซักผ้า&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ตรวจอาการไม่หมุน ไม่ปั่นแห้ง น้ำไม่เข้า หรือการทำงานผิดจังหวะ&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;FN&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ซ่อมพัดลม&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;แก้อาการหมุนช้า ไม่ส่าย เสียงดัง หรือมอเตอร์ทำงานผิดปกติ&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;RD&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ซ่อมวิทยุ&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ตรวจวงจรเบื้องต้น อาการเปิดไม่ติด เสียงขาดหาย หรือรับสัญญาณไม่ปกติ&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;AU&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ซ่อมเครื่องเสียง&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ดูอาการเสียงไม่ออก เสียงแตก ระบบจ่ายไฟมีปัญหา หรือใช้งานไม่เสถียร&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;HM&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ซ่อมเครื่องใช้ไฟฟ้าทั่วไปภายในบ้าน&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;หากไม่แน่ใจว่างานซ่อมเข้าข่ายหรือไม่ สามารถส่งรูปอาการมาสอบถามก่อนได้&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;ทำไมลูกค้าถึงเลือกช่างกุ้ง&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="section-desc"&gt;งานซ่อมที่ดีต้องสื่อสารชัดเจน ติดต่อสะดวก และดูแลต่อได้จริงหลังเข้าหน้างาน&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;01&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;บริการถึงบ้านในพื้นที่&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ไม่ต้องขนเครื่องขนาดใหญ่ไปส่งซ่อมเอง&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;02&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ตรวจเช็กอาการก่อนซ่อม&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ประเมินปัญหาและแนวทางก่อนเริ่มงาน&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;03&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;แจ้งราคาก่อนเริ่มงาน&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ช่วยให้ตัดสินใจได้ง่ายและชัดเจน&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;04&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ช่างในพื้นที่ ติดต่อสะดวก&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;นัดหมายง่าย พูดคุยตรงไปตรงมา&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;05&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ดูแลงานต่อเนื่องได้&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;หากมีคำถามเพิ่มเติมยังติดต่อกลับได้&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;พื้นที่ให้บริการ&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card area-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;ให้บริการในพื้นที่ บ้านหัน ตำบลขวาว อำเภอเสลภูมิ จังหวัดร้อยเอ็ด และพื้นที่ใกล้เคียง&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="area-note"&gt;หากอยู่นอกพื้นที่ สามารถส่งรูปอาการมาก่อนเพื่อประเมินได้&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;ตัวอย่างงานซ่อมจริง&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="section-desc"&gt;ตัวอย่างอาการที่พบได้บ่อยและซ่อมเรียบร้อยแล้ว&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;เครื่องซักผ้าไม่หมุน ซ่อมเรียบร้อย&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ตรวจเช็กอาการและทดสอบการทำงานก่อนส่งมอบ&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;ทีวีเปิดไม่ติด ซ่อมเรียบร้อย&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;วิเคราะห์อาการเบื้องต้นและแก้ไขจนกลับมาใช้งานได้&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="icon"&gt;3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;พัดลมหมุนช้า เปลี่ยนอะไหล่เรียบร้อย&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;เปลี่ยนชิ้นส่วนที่เกี่ยวข้องและทดสอบรอบหมุนใหม่&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;เสียงจากลูกค้า&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="section-desc"&gt;รีวิวตัวอย่างที่สื่อถึงความรวดเร็ว ความชัดเจน และการติดต่อที่ง่าย&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card review"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;เรียกตอนเช้า ตอนบ่ายใช้งานได้แล้ว&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;ลูกค้าในพื้นที่&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card review"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ช่างอธิบายดี แจ้งราคาก่อนทำงาน&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;ลูกค้าซ่อมทีวี&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card review"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ทำงานเรียบร้อย ติดต่อสะดวก&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="tag"&gt;ลูกค้าซ่อมเครื่องซักผ้า&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="section-title"&gt;ติดต่อช่างกุ้ง&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="section-desc"&gt;หากเครื่องใช้ไฟฟ้ามีปัญหา โทรหรือทัก LINE มาก่อนได้ เพื่อแจ้งอาการและนัดหมายเข้าตรวจเช็ก&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid grid-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card contact-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;โทร&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;a href="tel:08XXXXXXXX"&gt;08XXXXXXXX&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card contact-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;LINE&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;a href="https://line.me/R/ti/p/@yourline"&gt;@yourline&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;article class="card contact-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Facebook&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;ช่างกุ้ง ซ่อมเครื่องใช้ไฟฟ้า&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="card hours"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;strong&gt;เวลาให้บริการ&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;ทุกวัน 08:00–18:00&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card footer-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;เครื่องใช้ไฟฟ้ามีปัญหา ส่งรูปอาการมาสอบถามก่อนได้&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;ส่งอาการมาเพื่อประเมินเบื้องต้นก่อนเข้าหน้างาน ช่วยให้คุยงานง่ายและเร็วขึ้น&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="footer-actions" style="justify-content:center; margin-top:24px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn btn-primary" href="tel:08XXXXXXXX"&gt;โทรทันที&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn btn-secondary" href="https://line.me/R/ti/p/@yourline"&gt;ทัก LINE&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="footer-meta"&gt;ช่างกุ้ง ซ่อมเครื่องใช้ไฟฟ้า • บ้านหัน ต.ขวาว อ.เสลภูมิ จ.ร้อยเอ็ด&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="sticky-cta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="btn btn-primary" href="tel:08XXXXXXXX"&gt;โทรทันที&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="btn btn-secondary" href="https://line.me/R/ti/p/@yourline"&gt;ทัก LINE&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
